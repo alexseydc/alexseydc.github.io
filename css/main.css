@@ -1,0 +1,21 @@
+body {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+
+.placeholder {
+  color: white;
+  font-size: 48px;
+  align-self: flex-end;
+}
