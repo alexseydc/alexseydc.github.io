@@ -3,11 +3,11 @@ body {
   font-size: 1em;
   line-height: 1.4;
   font-family: "Lato", sans-serif;
-  background: rgb(63, 94, 251);
+  background: rgb(248, 188, 77);
   background: radial-gradient(
     circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
+    rgb(250, 223, 72) 0%,
+    rgb(146, 211, 126) 100%
   );
   display: flex;
   flex-direction: row-reverse;
