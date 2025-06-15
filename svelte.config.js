@@ -15,7 +15,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.env.GITHUB_ACTIONS ? '/lexfoliov2' : '/dev'
+			base: process.env.GITHUB_ACTIONS ? '/lexfoliov' : '/dev'
 		},
 		prerender: {
 		}
