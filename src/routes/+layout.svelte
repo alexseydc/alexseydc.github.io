@@ -25,7 +25,7 @@
 </script>
 
 <div class="lg:p-5 p-3 bg-amber-50 min-h-screen">
-    <div class="border-2 border-slate-800 lg:px-20 lg:py-12">
+    <div class="border-2 border-slate-800 lg:px-20 lg:py-12 px-5">
         <!-- desktop -->
         <div class="hidden lg:grid grid-cols-4 gap-y-12 w-full mb-20"> 
             <!-- <div class="col-span-2">
@@ -59,24 +59,29 @@
             </div>
         </div>
         <!-- mobile -->
-        <div class="lg:hidden grid grid-cols-4 mx-2 mt-2 pb-2 border-b border-slate-800">
-            <span class="col-span-3 text-xl text-slate-800">ALEXSEY DACOSTA</span>
+        <div class="lg:hidden flex justify-between mt-2 mb-8 pb-2 border-b border-slate-800">
+            <div>
+                <a href="{`${base}/`}" class="flex items-center gap-x-10 group">
+                    <img src={Logo} alt="logo" class="w-10 h-10"/>
+                    <span class="col-span-3 text-xl text-slate-800 font-bold">Alexsey<br />daCosta</span>
+                </a>
+            </div>
             <button onclick={toggleDropdown} class="cursor-pointer text-xl text-slate-800">
                 {#if isDropdownHidden}
                     <!-- <i class="text-slate-800 text-xl fa-solid fa-bars"></i> -->
-                     <span class="text-slate-800 text-xl">+</span>
+                     <span class="text-slate-800 text-xl">&#x271A;</span>
                 {:else}
                     <!-- <i class="text-slate-800 text-xl fa-solid fa-xmark"></i> -->
-                    <span class="text-slate-800 text-xl">x</span>
+                    <span class="text-slate-800 text-xl inline-block transform rotate-45">&#x271A;</span>
                 {/if}
             </button>
         </div>
         {#if !isDropdownHidden}
             <div transition:slide={{duration: 500, easing:cubicInOut}}
-             class="grid grid-cols-1 border-b-2 border-slate-800">
-                <a href="" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl">TEST</a>
-                <a href="" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl">TEST</a>
-                <a href="" class="mx-2 mt-2 pb-2  text-xl">TEST</a>
+             class="grid grid-cols-1 border-b-2 border-slate-800 mb-5">
+                <a href="{`${base}/portfolio`}" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl">My work</a>
+                <a href="{`${base}/contact`}" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl">Contact</a>
+                <a href="{`${base}/about-me`}" class="mx-2 mt-2 pb-10  text-xl">About me</a>
             </div>
         {/if}
         <!-- <div class="lg:h-52"></div> filler -->
