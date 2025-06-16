@@ -13,4 +13,4 @@ export interface LayoutState {
 }
 
 // Create a writable store with initial state
-export const layoutState = writable<LayoutState>({ message: 'Hello from layout!' });
+export const layoutState = writable<LayoutState>({ message: '' });
