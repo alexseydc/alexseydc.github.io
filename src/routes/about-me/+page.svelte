@@ -13,7 +13,7 @@
             class="border-2 border-slate-800 w-64 md:w-96 lg:w-full h-auto"
         />
     </div>
-    <p class="text-lg lg:text-2xl place-self-center justify-self-start max-w-2xl">
+    <p class="text-lg lg:text-xl place-self-center justify-self-start max-w-xl font-lexend">
         Hi! My name is Alexsey daCosta and I am a Graphic Designer. I have a BA from the University of Michigan where I studied Art & Design.
         <br><br>
         I am passionate about the environment and all things creative. In my free time you can find me taking walks, birdwatching, or playing video games.

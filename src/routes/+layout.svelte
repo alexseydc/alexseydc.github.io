@@ -20,14 +20,14 @@
         isDropdownHidden = true;
     })
     // const navText = "text-3xl text-blue-700 pb-4 border-b border-blue-700";
-	
+
 	let { children } = $props();
 </script>
 
 <div class="lg:p-5 p-3 bg-amber-50 min-h-screen">
     <div class="border-2 border-slate-800 lg:px-20 lg:py-12 px-5">
         <!-- desktop -->
-        <div class="hidden lg:grid grid-cols-4 gap-y-12 w-full mb-20"> 
+        <div class="hidden lg:grid grid-cols-4 gap-y-12 w-full mb-20">
             <!-- <div class="col-span-2">
                 <a href="" class="h-16 w-16 block" aria-label="logo/homepage link">
                     <img src={Logo} alt="logo"/>
@@ -36,23 +36,23 @@
             <a href="{`${base}/`}" class="flex gap-x-10 group">
                 <img src={Logo} alt="logo" class="w-16 h-16"/>
                 <div class="">
-                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">Alexsey daCosta</span>
+                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous">Alexsey daCosta</span>
                     <div class="w-full mt-4 border-b-2 border-slate-800 group-hover:w-[150%] transition-all"></div>
                 </div>
             </a>
             <div></div>
             <div class="col-span-2 grid grid-cols-5 gap-x-4">
                 <a href="{`${base}/portfolio`}" class="group col-span-2">
-                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">My work</span>
+                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous">My work</span>
                     <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
                 </a>
                 <div class="grid grid-cols-2 gap-x-4 col-span-3">
                     <a href="{`${base}/contact`}" class="group">
-                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">Contact</span>
+                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous">Contact</span>
                         <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
                     </a>
                     <a href="{`${base}/about-me`}" class="group">
-                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend whitespace-nowrap">About me</span>
+                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous whitespace-nowrap">About me</span>
                         <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
                     </a>
                 </div>
@@ -90,7 +90,7 @@
         </div> -->
 
         <div class="flex items-center mb-15">
-        <div class="text-xl font-lexend text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
+        <div class="text-xl font-righteous text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
         </div>
         {@render children()}
         <!-- footer -->
