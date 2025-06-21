@@ -66,13 +66,13 @@
                     <span class="col-span-3 text-xl text-slate-800 font-bold">Alexsey<br />daCosta</span>
                 </a>
             </div>
-            <button onclick={toggleDropdown} class="cursor-pointer text-xl text-slate-800">
+            <button onclick={toggleDropdown} class="pl-5 cursor-pointer text-xl text-slate-800">
                 {#if isDropdownHidden}
                     <!-- <i class="text-slate-800 text-xl fa-solid fa-bars"></i> -->
-                     <span class="text-slate-800 text-6xl">+</span>
+                     <span class="text-slate-800 text-5xl">+</span>
                 {:else}
                     <!-- <i class="text-slate-800 text-xl fa-solid fa-xmark"></i> -->
-                    <span class="text-slate-800 text-6xl inline-block transform rotate-45">+</span>
+                    <span class="text-slate-800 text-5xl inline-block transform rotate-45">+</span>
                 {/if}
             </button>
         </div>
