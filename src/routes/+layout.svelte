@@ -69,10 +69,10 @@
             <button onclick={toggleDropdown} class="cursor-pointer text-xl text-slate-800">
                 {#if isDropdownHidden}
                     <!-- <i class="text-slate-800 text-xl fa-solid fa-bars"></i> -->
-                     <span class="text-slate-800 text-xl">&#x271A;</span>
+                     <span class="text-slate-800 text-6xl">+</span>
                 {:else}
                     <!-- <i class="text-slate-800 text-xl fa-solid fa-xmark"></i> -->
-                    <span class="text-slate-800 text-xl inline-block transform rotate-45">&#x271A;</span>
+                    <span class="text-slate-800 text-6xl inline-block transform rotate-45">+</span>
                 {/if}
             </button>
         </div>
