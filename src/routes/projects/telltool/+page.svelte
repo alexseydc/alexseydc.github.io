@@ -1,6 +1,7 @@
 <script lang="ts">
 	import LogoImage from '$lib/assets/projects/telltool/TELLTOOL_Logo.png';
 
+	import Lightbox from '$lib/Lightbox.svelte';
 	import Book from '$lib/assets/projects/telltool/TELLTOOL_Book.jpeg';
 	import CoverImage from '$lib/assets/projects/telltool/TELLTOOL_CoverImage.jpeg';
 	import DesktopLanding from '$lib/assets/projects/telltool/TELLTOOL_DesktopLanding.jpg';
@@ -10,6 +11,17 @@
 	import { layoutState } from '$lib/store.js';
 
 	layoutState.set({ message: 'TELL Tool Visual Identity and Branding' });
+
+	const imageClass = 'mb-4 w-full border-2 border-lime-800';
+
+	const images = [
+		{ src: PosterMockup, alt: 'PosterMockup', class: imageClass },
+		{ src: Book, alt: 'Book', class: imageClass },
+		{ src: DesktopMockup, alt: 'DesktopMockup', class: imageClass },
+		{ src: CoverImage, alt: 'CoverImage', class: imageClass },
+		{ src: DesktopLanding, alt: 'DesktopLanding', class: imageClass },
+		{ src: MobileMockup, alt: 'MobileMockup', class: imageClass }
+	];
 </script>
 
 <div>
@@ -29,11 +41,7 @@
 	</div>
 
 	<div class="mt-8 columns-2 gap-4 md:columns-4">
-		<img src={PosterMockup} alt="PosterMockup" class="mb-4 w-full border-2 border-lime-800" />
-		<img src={Book} alt="Book" class="mb-4 w-full border-2 border-lime-800" />
-		<img src={DesktopMockup} alt="DesktopMockup" class="mb-4 w-full border-2 border-lime-800" />
-		<img src={CoverImage} alt="CoverImage" class="mb-4 w-full border-2 border-lime-800" />
-		<img src={DesktopLanding} alt="DesktopLanding" class="mb-4 w-full border-2 border-lime-800" />
-		<img src={MobileMockup} alt="MobileMockup" class="mb-4 w-full border-2 border-lime-800" />
+		<Lightbox {images} />
 	</div>
+
 </div>
