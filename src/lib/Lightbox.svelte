@@ -1,14 +1,13 @@
 <script lang="ts">
 	import { LightboxGallery, GalleryThumbnail, GalleryImage } from 'svelte-lightbox';
 
-	// let { images } = $props();
-    interface Image {
-        src: string;
-        alt: string;
-        class: string;
-    }
+	interface Image {
+		src: string;
+		alt: string;
+		class: string;
+	}
 
-    export let images: Image[];
+	const { images } = $props<{ images: Image[] }>();
 </script>
 
 <LightboxGallery>
@@ -22,9 +21,9 @@
 		</div>
 	</svelte:fragment>
 
-	{#each images as {src, alt}}
+	{#each images as { src, alt }}
 		<GalleryImage>
-			<img src={src} alt={alt} />
+			<img {src} {alt} />
 		</GalleryImage>
 	{/each}
 </LightboxGallery>
