@@ -7,6 +7,8 @@
     import { base } from '$app/paths';
     import Logo from '$lib/assets/LEXLOGO-01.svg'
     import { layoutState } from '$lib/store.js';
+    import Instagram from "$lib/assets/instagram.svg";
+    import LinkedIn from "$lib/assets/linkedin.svg";
 
     let isDropdownHidden = $state(true);
 
@@ -93,7 +95,24 @@
         <div class="md:text-xl text-sm font-righteous text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
         </div>
         {@render children()}
+
         <!-- footer -->
+        <div class="w-full">
+            <div class="w-full mt-4 border-b-2 border-slate-800 group-hover:w-[150%] transition-all"></div>
+            <div class="flex justify-between items-center my-5">
+                <div class="flex gap-2">
+                    <a href="https://www.instagram.com/alexseydc/" target="_blank">
+                        <img class="h-8" alt="Instagram" src={Instagram}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexsey-dacosta-8a18b12b1/" target="_blank">
+                        <img class="h-8" alt="LinkedIn" src={LinkedIn}/>
+                    </a>
+                </div>
+                <a href="{`${base}/`}" class="">
+                    <img src={Logo} alt="logo" class="w-10 h-10"/>
+                </a>
+            </div>
+        </div>
 
     </div>
 </div>
