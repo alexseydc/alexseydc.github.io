@@ -24,10 +24,10 @@
 	];
 </script>
 
-<div>
-	<div class="flex justify-evenly">
+<div class="mb-5">
+	<div class="flex justify-evenly flex-wrap md:flex-nowrap">
 		<div class="w-500 px-10 pt-5">
-			<img src={LogoImage} alt="logo" class="h-auto w-64 md:w-96 lg:w-full" />
+			<img src={LogoImage} alt="logo" class="h-auto mb-10 w-64 md:w-96 lg:w-full" />
 		</div>
 		<div class="font-lexend">
 			This project was for my Visual Identity and Branding class at the University of Michigan. The
@@ -40,7 +40,7 @@
 		</div>
 	</div>
 
-	<div class="mt-8 columns-2 gap-4 md:columns-4">
+	<div class="mt-15 columns-2 gap-4 md:columns-4">
 		<Lightbox {images} />
 	</div>
 

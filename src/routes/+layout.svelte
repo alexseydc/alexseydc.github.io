@@ -90,7 +90,7 @@
         </div> -->
 
         <div class="flex items-center mb-15">
-        <div class="text-xl font-righteous text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
+        <div class="md:text-xl text-sm font-righteous text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
         </div>
         {@render children()}
         <!-- footer -->
