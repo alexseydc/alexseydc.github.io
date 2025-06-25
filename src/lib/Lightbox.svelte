@@ -4,7 +4,6 @@
 	interface Image {
 		src: string;
 		alt: string;
-		class: string;
 	}
 
 	const { images } = $props<{ images: Image[] }>();
@@ -15,7 +14,7 @@
 		<div>
 			{#each images as image, index}
 				<GalleryThumbnail id={index}>
-					<img {...image} />
+					<img class="mb-4 w-full border-2 border-slate-800" {...image} />
 				</GalleryThumbnail>
 			{/each}
 		</div>
