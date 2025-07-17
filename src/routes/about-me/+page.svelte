@@ -21,10 +21,10 @@
 			If you like what you see I would love to work with you!
 		</p>
 		<iframe
-			class="mt-10"
+			class="mt-10 w-full"
 			title="contact"
 			src="https://docs.google.com/forms/d/e/1FAIpQLSe5FNnOkNnH7ltdu_enzeoaF1-1U1Leg8gh7xRUgrU_vKeTmw/viewform?embedded=true"
-			width="500"
+			
 			height="650"
 			frameborder="0"
 			marginheight="0"
