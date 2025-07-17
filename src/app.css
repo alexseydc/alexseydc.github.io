@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import 'tailwindcss';
 @import '../static/fonts.css';
 
 @theme {
     --font-righteous: 'Righteous', system-ui;
     --font-lexend: 'Lexend', system-ui;
+    --font-header: 'Lora', serif;
 }

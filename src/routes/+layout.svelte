@@ -9,6 +9,7 @@
     import { layoutState } from '$lib/store.js';
     import Instagram from "$lib/assets/instagram.svg";
     import LinkedIn from "$lib/assets/linkedin.svg";
+	import NavItem from '$lib/NavItem.svelte';
 
     let isDropdownHidden = $state(true);
 
@@ -21,7 +22,6 @@
     afterNavigate(() => {
         isDropdownHidden = true;
     })
-    // const navText = "text-3xl text-blue-700 pb-4 border-b border-blue-700";
 
 	let { children } = $props();
 </script>
@@ -29,43 +29,41 @@
 <div class="lg:p-5 p-3 bg-amber-50 min-h-screen">
     <div class="border-2 border-slate-800 lg:px-20 lg:py-12 px-5">
         <!-- desktop -->
-        <div class="hidden lg:grid grid-cols-4 gap-y-12 w-full mb-20">
-            <!-- <div class="col-span-2">
-                <a href="" class="h-16 w-16 block" aria-label="logo/homepage link">
-                    <img src={Logo} alt="logo"/>
-                </a>
-            </div> -->
+        <div class="hidden lg:flex justify-between w-full mb-20">
+            <div class="w-1/4 ">
             <a href="{`${base}/`}" class="flex gap-x-10 group">
                 <img src={Logo} alt="logo" class="w-16 h-16"/>
                 <div class="">
-                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous">Alexsey daCosta</span>
+                    <span class="
+                        text-xl
+                        lg:text-2xl
+                        xl:text-3xl
+                        text-slate-800
+
+                        transition-all
+                        font-header
+                        font-medium
+                        group-hover:font-bold
+                        ">Alexsey daCosta</span>
                     <div class="w-full mt-4 border-b-2 border-slate-800 group-hover:w-[150%] transition-all"></div>
                 </div>
             </a>
-            <div></div>
-            <div class="col-span-2 grid grid-cols-5 gap-x-4">
-                <a href="{`${base}/portfolio`}" class="group col-span-2">
-                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous">My work</span>
-                    <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
-                </a>
-                <div class="grid grid-cols-2 gap-x-4 col-span-3">
-                    <a href="{`${base}/contact`}" class="group">
-                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous">Contact</span>
-                        <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
-                    </a>
-                    <a href="{`${base}/about-me`}" class="group">
-                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-righteous whitespace-nowrap">About me</span>
-                        <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
-                    </a>
-                </div>
+            </div>
+            <div class="">
+              <div class="flex flex-wrap justify-end gap-5">
+                <NavItem name={"Home"} href={`${base}/`} />
+                <NavItem name={"My work"} href={`${base}/portfolio`} />
+                <NavItem name={"About me"} href={`${base}/about-me`} />
+              </div>
             </div>
         </div>
+
         <!-- mobile -->
         <div class="lg:hidden flex justify-between mt-2 mb-8 pb-2 border-b border-slate-800">
             <div>
                 <a href="{`${base}/`}" class="flex items-center gap-x-10 group">
                     <img src={Logo} alt="logo" class="w-10 h-10"/>
-                    <span class="col-span-3 text-xl text-slate-800 font-bold">Alexsey<br />daCosta</span>
+                    <span class="col-span-3 text-xl text-slate-800 font-header font-medium">Alexsey<br />daCosta</span>
                 </a>
             </div>
             <button onclick={toggleDropdown} class="pl-5 cursor-pointer text-xl text-slate-800">
@@ -81,18 +79,14 @@
         {#if !isDropdownHidden}
             <div transition:slide={{duration: 500, easing:cubicInOut}}
              class="grid grid-cols-1 border-b-2 border-slate-800 mb-5">
-                <a href="{`${base}/portfolio`}" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl">My work</a>
-                <a href="{`${base}/contact`}" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl">Contact</a>
-                <a href="{`${base}/about-me`}" class="mx-2 mt-2 pb-10  text-xl">About me</a>
+                <a href="{`${base}/`}" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl font-header font-medium">Home</a>
+                <a href="{`${base}/portfolio`}" class="mx-2 mt-2 pb-2 border-b border-slate-800 text-xl font-header font-medium">My work</a>
+                <a href="{`${base}/about-me`}" class="mx-2 mt-2 pb-10  text-xl font-header font-medium">About me</a>
             </div>
         {/if}
-        <!-- <div class="lg:h-52"></div> filler -->
-        <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-        </div> -->
 
         <div class="flex items-center mb-15">
-        <div class="md:text-xl text-sm font-righteous text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
+        <div class="md:text-xl text-lg font-header text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
         </div>
         {@render children()}
 
