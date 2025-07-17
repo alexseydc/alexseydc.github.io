@@ -9,9 +9,9 @@
 		title: 'Playing Cards Project',
 		logoImage: CoverImage,
 		images: [
-			{ src: CoverImage, alt: 'CoverImage' },
 			{ src: cards1, alt: 'cards1' },
-			{ src: flat, alt: 'flat' }
+			{ src: flat, alt: 'flat' },
+			{ src: CoverImage, alt: 'CoverImage' }
 		]
 	};
 </script>
