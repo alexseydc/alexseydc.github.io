@@ -11,15 +11,13 @@
 
 <LightboxGallery>
 	<svelte:fragment slot="thumbnail">
-		<div>
-			{#each images as image, index}
-				<GalleryThumbnail id={index}>
-					<div class="pt-4">
-						<img class="w-full border border-slate-800" {...image} />
-					</div>
-				</GalleryThumbnail>
-			{/each}
-		</div>
+		{#each images as image, index}
+			<GalleryThumbnail id={index}>
+				<div class="inline-block pb-4">
+					<img class="w-full border border-slate-800" {...image} />
+				</div>
+			</GalleryThumbnail>
+		{/each}
 	</svelte:fragment>
 
 	{#each images as { src, alt }}

@@ -12,7 +12,7 @@
 		<div class="columns-2 gap-4 lg:columns-4">
 			{#each images as image, index}
 				<GalleryThumbnail id={index}>
-					<div class="pt-4">
+					<div class="inline-block pb-4">
 						<img class=" w-full border border-slate-800" src={image} alt="thumbnail" />
 					</div>
 				</GalleryThumbnail>
