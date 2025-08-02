@@ -14,7 +14,7 @@
 		<div>
 			{#each images as image, index}
 				<GalleryThumbnail id={index}>
-					<img class="mb-4 w-full border-2 border-slate-800" {...image} />
+					<img class="mb-4 w-full border border-slate-800" {...image} />
 				</GalleryThumbnail>
 			{/each}
 		</div>

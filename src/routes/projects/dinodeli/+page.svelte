@@ -13,7 +13,7 @@
 	import wallsign from '$lib/assets/projects/dinodeli/DINODELI_wallsign.png';
 
 	const params = {
-		title: 'Ann Arbor Film Festival',
+		title: 'Dino Deli',
 		logoImage: Logo,
 		images: [
 			{ src: BoxFlat, alt: 'BoxFlat' },
