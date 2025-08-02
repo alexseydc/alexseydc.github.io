@@ -26,3 +26,19 @@
 		</GalleryImage>
 	{/each}
 </LightboxGallery>
+
+<style>
+	:global(div.svelte-lightbox-body button) {
+		cursor: pointer;
+	}
+
+	:global(div.svelte-lightbox-body svg) {
+		background-color: rgba(200, 200, 200, 0.3);
+		border-radius: 50%;
+	}
+
+	:global(div.svelte-lightbox-body button:disabled) {
+		display: none;
+		pointer-events: none;
+	}
+</style>
