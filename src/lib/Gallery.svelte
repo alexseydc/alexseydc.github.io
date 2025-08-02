@@ -12,7 +12,9 @@
 		<div class="columns-2 gap-4 lg:columns-4">
 			{#each images as image, index}
 				<GalleryThumbnail id={index}>
-					<img class="mb-4 w-full border border-slate-800" src={image} alt="TODO" />
+					<div class="pt-4">
+						<img class=" w-full border border-slate-800" src={image} alt="thumbnail" />
+					</div>
 				</GalleryThumbnail>
 			{/each}
 		</div>
