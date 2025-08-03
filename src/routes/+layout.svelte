@@ -127,13 +127,4 @@
 			</div>
 		</div>
 	</div>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNHD4X9BT3"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-TNHD4X9BT3');
-	</script>
 </div>
